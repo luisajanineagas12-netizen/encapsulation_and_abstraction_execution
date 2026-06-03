@@ -12,3 +12,13 @@ class Car:
 
     def get_speed(self):
         return self.__speed
+
+def test_car():
+    car_type = Car("2026", "BMW")
+
+    print("Accelerating........")
+    for i in range(5):
+        car_type.accelerate()
+        print(f"After car accelerated {i+1}, Speed = {car_type.get_speed()}")
+
+test_car()
