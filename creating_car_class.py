@@ -21,4 +21,12 @@ def test_car():
         car_type.accelerate()
         print(f"After car accelerated {i+1}, Speed = {car_type.get_speed()}")
 
+    for i in range(2):
+        print("----------------------------------")
+
+    print("Braking........")
+    for i in range(5):
+        car_type.brake()
+        print(f"After car brake {i+1}, Speed = {car_type.get_speed()}")
+
 test_car()
