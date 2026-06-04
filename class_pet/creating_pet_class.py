@@ -23,8 +23,16 @@ class Pet:
         return self.__age
 
 def pet():
-    
+    name = input("Please enter your pet name: ")
+    animal_type = input("Enter your pet animal type: ")
+    age = int(input("Please enter your pet age: "))
 
+    pets_information = Pet(name, animal_type, age)
 
+    print(pets_information.get_name())
+    print(pets_information.get_animal_type())
+    print(pets_information.get_age())
+
+pet()
 
 
