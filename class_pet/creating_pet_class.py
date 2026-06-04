@@ -29,9 +29,9 @@ def pet():
 
     pets_information = Pet(name, animal_type, age)
 
-    print(pets_information.get_name())
-    print(pets_information.get_animal_type())
-    print(pets_information.get_age())
+    print(f"\nName of pet: {pets_information.get_name()}")
+    print(f"Animal type: {pets_information.get_animal_type()}")
+    print(f"Age: {pets_information.get_age()}")
 
 pet()
 
